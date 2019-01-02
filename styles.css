@@ -1,7 +1,8 @@
 #nav-bar {
-  /*border: 1px solid black;*/
   display: flex;
-  padding: 10px;
+  padding: 55px;
+  padding-bottom: 28px;
+  padding-top: 30px;
 }
 
 #nav-bar > h1 {
@@ -11,7 +12,6 @@
 }
 
 #links {
-  
   list-style-type: none;
 }
 
@@ -21,14 +21,6 @@
   margin-top: 6px;
 }
 
-#volunteer-link {
-  margin-right: 55px;
-}
-
-/*#header {
-  border: 1px solid purple;
-}*/
-
 #donate-button-wrapper{
   text-align: center;
 }
@@ -36,32 +28,55 @@
 #donate-btn {
   text-align: center;
   border-radius: 5px;
-  width: 100px;
-  height: 35px;
+  width: 155px;
+  height: 40px;
   padding: 6px;
   background-color:#6E89EB;
   cursor: pointer;
-  color: white; 
+  color: white;
+  border: none;
 }
 
-#header-wrapper{
-  margin-bottom: 25px;
-}
-
-#header{
-  padding-top: 75px;
+#header {
+  padding-top: 55px;
   text-align: center;
 }
 
-#header > h1{
+#header > h1 {
   padding: 0px 150px;
+  margin-bottom: 50px;
+  font-size: 32px;
+  line-height: 40px;
+  color: #fff;
+  margin-top: 180px;
 }
 
-#header-wrapper{
-  padding-bottom: 100px;
+#header-wrapper {
+  background-color: grey;
+  background-color: #cccccc;
 }
 
-#bullet-point-ctr{
+#background-img {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  background-image: url('./imgs/water-hero.jpg');
+  width: 100%;
+  height: 80%;
+  filter:brightness(0.3);
+  background-repeat: no-repeat;
+}
+
+#content {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+#bullet-point-ctr {
   display:flex;
   flex-direction: column;
 }
