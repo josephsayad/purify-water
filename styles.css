@@ -30,7 +30,6 @@
 }*/
 
 #donate-button-wrapper{
-
   text-align: center;
 }
 
@@ -42,10 +41,15 @@
   padding: 6px;
   background-color:#6E89EB;
   cursor: pointer;
+  color: white; 
 }
 
+#header-wrapper{
+  margin-bottom: 25px;
+}
 
 #header{
+  padding-top: 75px;
   text-align: center;
 }
 
@@ -53,10 +57,13 @@
   padding: 0px 150px;
 }
 
+#header-wrapper{
+  padding-bottom: 100px;
+}
+
 #bullet-point-ctr{
   display:flex;
   flex-direction: column;
-
 }
 
 .bullet-point{
