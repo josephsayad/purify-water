@@ -1,5 +1,5 @@
 #nav-bar {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   display: flex;
   padding: 10px;
 }
@@ -11,10 +11,12 @@
 }
 
 #links {
+  
   list-style-type: none;
 }
 
 #donate-link, #volunteer-link {
+  cursor: pointer;
   flex: 0.5;
   margin-top: 6px;
 }
@@ -23,12 +25,42 @@
   margin-right: 55px;
 }
 
-#header {
+/*#header {
   border: 1px solid purple;
+}*/
+
+#donate-button-wrapper{
+
+  text-align: center;
 }
 
 #donate-btn {
-  width: 25px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100px;
+  height: 35px;
+  padding: 6px;
+  background-color:#6E89EB;
+  cursor: pointer;
+}
+
+
+#header{
+  text-align: center;
+}
+
+#header > h1{
+  padding: 0px 150px;
+}
+
+#bullet-point-ctr{
+  display:flex;
+  flex-direction: column;
+
+}
+
+.bullet-point{
+  width: 15px;
   height: 15px;
-  background-color: blue;
+  border: 1px solid black;
 }
