@@ -74,7 +74,7 @@ a{
   right: 0;
   z-index: 1;
   display: block;
-  background-image: url('./imgs/water-hero.jpg');
+  background-image: url('../imgs/water-hero.jpg');
   width: 100%;
   height: 80%;
   filter:brightness(0.3);
