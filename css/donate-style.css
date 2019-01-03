@@ -94,18 +94,30 @@ a {
     padding: 25px;
 }
 
-.card{
-    margin: 0px 70px;
-    padding: 25px 45px;
-    color: #000;
+#card-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-left: 70px;
+    margin-right: 70px;
+    color: #fff;
     background-color: #f2f2f2;
     width: 45%;
 }
 
+#card-head{
+    flex: 1;
+    background-color: #6E89EB;
+}
+
+#card-head > h2{
+    padding-left: 15px;
+}
+
+#card-body{
+    flex: 2;
+}
+
+
 
 /*-----------------END FLEXBOX----------------*/
-@media (max-width: 900px) {
-    #paragraph {
-        margin-top: 300px;
-    }
-}
