@@ -46,18 +46,113 @@
 
     <div id="card-wrapper">
       <div id="card-head">
-        <h2>Featured</h2>
+        <h3>1. Pledge an amount</h3>
       </div>
 
-      <div id="card-body">
-        <h5>Special title treatment</h5>
-        <p>With supporting text below as a natural lead-in to additional content.</p>
+      <div class="card-body">
+        <p>Choose the amount that you wish to donate</p>
+
+        <div id="button-amount">
+
+          <div>
+            <button class="button-layout" id="10-bucks" onClick="getSum(this.id,0)">$10</button>
+          </div>
+
+          <div>
+            <button class="button-layout" id="20-bucks" onClick="getSum(this.id,0)">$20 </button>
+          </div>
+
+          <div>
+            <button class="button-layout" id="50-bucks" onClick="getSum(this.id,0)">$50 </button>
+          </div>
+
+          <div>
+            <button class="button-layout" id="100-bucks" onClick="getSum(this.id,0)">$100</button>
+          </div>
+
+          <div>
+            <button class="button-layout" id="200-bucks" onClick="getSum(this.id,0)">$200</button>
+          </div>
+
+        </div>
+
+        <form>
+          <div class='form-group'>
+            <label for="other-amount">Other amount: $ </label>
+            <input type="number" class="form-control" id="other-amount" placeholder="Enter amount" onkeyup="getSum(this.id,this.value)">
+
+          </div>
+
+          <div id="sum-display-flex">
+
+            <button class="button-layout" type="button" id="reset-button" onClick="getSum(this.id,-1)">Reset</button>
+            <div class="form-group">
+              <label for="final-sum">Total amount:</label>
+              <p id="display-sum">$0</p>
+            </div>
+
+          </div>
+        </form>
       </div>
+
+      <div id="billing-label">
+        <h3>2. Billing Information</h3>
+      </div>
+
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input type="name" class="form-control" id="full-name" required="true" placeholder="Enter your name">
+          </div>
+
+          <div class="form-group">
+            <label for="email-address">E-mail Address</label>
+            <input type="email" class="form-control" id="email-address" required="true" placeholder="name@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="card-number">Credit Card Number</label>
+            <input class="form-control" id="card-number" required="true" placeholder="Enter your credit card number">
+          </div>
+
+          <div class="form-group">
+            <label for="security-code">Security Code</label>
+            <input type="number" class="form-control" id="security-code" required="true" placeholder="Eg: 123">
+          </div>
+
+          <!--Enter the security code diagram here-->
+
+          <label>Billing Address</label>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" required="true" placeholder="Street address with apartment number"></input>
+          </div>
+
+          <div id="address-wrapper">
+            <div class="form-group">
+              <label for="zip-code">Zip Code</label>
+              <input type="number" class="form-control" id="zip-code" required="true" placeholder="Enter Zip">
+            </div>
+
+            <div class="form-group">
+              <label for="state">State</label>
+              <input type="text" class="form-control" id="state" placeholder="Eg: NY">
+            </div>
+          </div>
+        </form>
+
+        <button id="submit-button" class="button-layout">Submit</button>
+      </div>
+
     </div>
 
   </div>
 
+  </div>
+
   <script src="./scripts/donate-carousel.js" type="text/javascript"></script>
+  <script src="./scripts/sum-calculator.js" type="text/javascript"></script>
 </body>
 
 </html>
