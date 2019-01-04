@@ -46,6 +46,12 @@ a:hover {
   border: none;
 }
 
+#donate-btn > a {
+  color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
 #header {
   padding-top: 55px;
   text-align: center;
@@ -66,7 +72,7 @@ a:hover {
 }
 
 #header-img {
-  background-image: url('./imgs/water-hero.jpg');
+  background-image: url('../imgs/water-hero.jpg');
   background-repeat: no-repeat;
   left: 0;
   right: 0;
